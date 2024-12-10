@@ -16,11 +16,13 @@ Desenvolvimento do projeto "Coparação tempo execução ETL PandasXSpark" com o
 
 ## 📓 Acesso direto aos notebooks no Databricks:
 
-- [Projeto_Bigdata_Spark.ipynb](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3117382334967596/1095848774740136/1894754445070318/latest.html)
+- [Projeto_Bigdata_Spark.ipynb](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2861679401553498/2986892077130663/7777518843978957/latest.html)
+
+- [Projeto_Bigdata_Pandas.ipynb](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2861679401553498/2986892077130625/7777518843978957/latest.html)
 
 ## 📋 Enunciado do Projeto
 
-### **Estudo comprativo de tempo de execução do processo de ETL PandsXSpark**
+### **Estudo comparativo de tempo de execução do processo de ETL PandsXSpark**
 
 #### Contexto:
 >A PyCoders Ltda., cada vez mais especializada no mundo da Engenharia de Dados, foi procurada por uma fintech para desenvolver um projeto de análise de dados.
@@ -53,6 +55,10 @@ A persistência dos dados, apos o processo, foi feita através de arquivos parqu
 
 ## 📺 Demonstração
 
+<p align="center">
+  <img src="./_captures/Demonstracao.gif">
+</p>
+
 ## ☑️  Pré-requisitos
 - Cadastro no **[Databricks Community](https://www.databricks.com/try-databricks#account)**;
 
@@ -62,9 +68,10 @@ A persistência dos dados, apos o processo, foi feita através de arquivos parqu
     - Pode baixar todos os notebooks e importar via browse;
     - Ou pode importar através da URL dos notebooks presentes no item [Acesso direto aos notebooks no Databricks](#-acesso-direto-aos-notebooks-no-databricks);
 3. Criar e iniciar o cluster no Databricks;
-4. Inicializar os notebooks 'Projeto_Bigdata_Spark' com 'Run All';
+4. Inicializar os notebooks 'Projeto_Bigdata_Pandas' com 'Run All';
+5. Inicializar os notebooks 'Projeto_Bigdata_Spark' com 'Run All';
 
-## 🛠️ Tecnologias Utilizas
+## 🛠️ Tecnologias Utilizadas
 
 * [Databricks Community](https://www.databricks.com/try-databricks#account)
 * [Python](https://www.python.org/) - Linguagem de Programação
@@ -73,11 +80,34 @@ A persistência dos dados, apos o processo, foi feita através de arquivos parqu
 
 
 ## 🚨 Dificuldades
+- Trabalhar com Spark e Databricks;
+- Encontrar uma solução para guardar os tempos de execução.
 
 
 ## 📈 Melhorias futuras:
-- Estrutura carregamento de dados utilizando formato tabela floco de neve
-- Realizar junção de tabelas utilziando formato suportado sql
+- Estrutura carregamento de dados utilizando formato tabela floco de neve;
+- Realizar junção de tabelas utilziando formato suportado SQL;
+- Fazer comparação a nível de memória ao invés de apenas tempo de execução.
+
+## 🆗 Resultados obtidos:
+
+- Pandas: 
+
+| Processo       | Transações  | Cartões   | Usuários  |
+|----------------|-------------|-----------|-----------|
+| Extracao       | 23.103574   | 0.030902  | 0.010606  |
+| Transformacao  | 51.888618   | 0.079121  | 0.071062  |
+| Carga          | 8.566636    | 0.086188  | 0.008319  |
+
+- Spark:
+
+| Processo       | Transações  | Cartões   | Usuários  |
+|----------------|-------------|-----------|-----------|
+| Extracao       | 39.579492   | 1.598298  | 1.265999  |
+| Transformacao  | 0.011337    | 0.037235  | 0.032321  |
+| Carga          | 106.595586  | 2.165236  | 1.719501  |
+
+
 
 
 
