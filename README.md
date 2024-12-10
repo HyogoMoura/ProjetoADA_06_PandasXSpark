@@ -2,7 +2,7 @@
 Projeto do modulo bigdata do curso de engenharia de dados Santander Codes 2024
 > *Turma 11080 - Santander Coders 2024 - Engenharia de Dados*
 
-Desenvolvimento do projeto "Coparação tempo execução ETL PandasXSpark" com o intuito de extrair dados da [Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets), transformalos e armazenar no formato parquet.
+Desenvolvimento do projeto "Coparação tempo execução ETL PandasXSpark" com o intuito de extrair dados da [Financial Transactions Dataset](https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets), transforma e armazenar no formato parquet.
 
 **Todo projeto foi desenvolvido com a linguagem de programação Python no Databricks Community.**
 
@@ -43,9 +43,10 @@ Desenvolvimento do projeto "Coparação tempo execução ETL PandasXSpark" com o
 ## 📝 Descrição do Projeto
 
 #### 1. Definição da estutura da Extração:
+Extração foi executada utilziando arquivo formato csv presente no kaggle
 
 #### 2. Trasformação executadas:
-Foi escolhida a opção 1 - Apache Kafka e Spark Streaming.
+Tabelas foram saneadas com plipeza de valores nulos ajustado tipo e verificaço de valores duplicados ou/ e invalidos
 
 #### 3. Persistência dos dados:
 A persistência dos dados, apos o processo, foi feita através de arquivos parquet.
@@ -54,8 +55,6 @@ A persistência dos dados, apos o processo, foi feita através de arquivos parqu
 
 ## ☑️  Pré-requisitos
 - Cadastro no **[Databricks Community](https://www.databricks.com/try-databricks#account)**;
-
-
 
 ## ⚙️ Passo a passo para executar o projeto:
 1. Cadastro e login no **[Databricks Community](https://community.cloud.databricks.com/login.html)**;
