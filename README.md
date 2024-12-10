@@ -59,6 +59,15 @@ A persistência dos dados, após o processo, foi feita através de arquivos parq
   <img src="./_captures/Demonstracao.gif">
 </p>
 
+## 📺 Demonstração de como carregar os arquivos de dados no Databricks
+
+- Ao rodar primeiro o arquivo de Pandas, os arquivos são persisitidos automaticamente para o dbfs do Databricks;
+- Caso ocorra um erro nessa célula (pode ocorrer erro de permissão ao baixar os arquivos) será necessário fazer o upload dos arquivos manualmente conforme demonstração abaixo.
+
+<p align="center">
+  <img src="./_captures/Demonstracao2.gif">
+</p>
+
 ## ☑️  Pré-requisitos
 - Cadastro no **[Databricks Community](https://www.databricks.com/try-databricks#account)**;
 
